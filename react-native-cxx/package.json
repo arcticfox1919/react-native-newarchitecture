@@ -35,6 +35,7 @@
     "example": "yarn workspace react-native-cxxdemo-example",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
+    "codegen": "npx react-native codegen --path .",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "test": "jest",
@@ -63,6 +64,7 @@
     "@eslint/compat": "^1.3.2",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.35.0",
+    "@react-native-community/cli": "^20.0.1",
     "@react-native/babel-preset": "0.83.0",
     "@react-native/eslint-config": "0.83.0",
     "@release-it/conventional-changelog": "^10.0.1",
@@ -110,11 +112,13 @@
     ]
   },
   "codegenConfig": {
-    "name": "CxxdemoSpec",
+    "name": "CppDemoSpec",
     "type": "modules",
     "jsSrcsDir": "src",
+    "outputDir": "generated",
+    "includesGeneratedCode": true,
     "android": {
-      "javaPackageName": "com.cxxdemo"
+      "javaPackageName": "com.cppdemo"
     }
   },
   "prettier": {

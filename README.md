@@ -11,6 +11,14 @@ This repository demonstrates the usage of the **New Architecture** in React Nati
 - `react-native-turbo`: Demonstrates a TurboModule with native implementation.
 - `react-native-cxx`: Demonstrates a pure C++ TurboModule.
 
+## Creating a New Library
+
+To create a new library with the New Architecture support, use:
+
+```bash
+npx create-react-native-library@latest <your-library-name>
+```
+
 ## Prerequisites
 
 - React Native >= 0.83.0

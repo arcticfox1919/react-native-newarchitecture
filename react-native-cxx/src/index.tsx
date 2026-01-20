@@ -1,5 +1,5 @@
-import Cxxdemo from './NativeCxxdemo';
+import CppDemo from './NativeCppDemo';
 
 export function multiply(a: number, b: number): number {
-  return Cxxdemo.multiply(a, b);
+  return CppDemo.multiply(a, b);
 }
